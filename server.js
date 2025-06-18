@@ -4,7 +4,8 @@ const app = express();
 
 app.use(express.json());
 
-const slackWebhookUrl = process.env.https://hooks.slack.com/services/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;
+// Webhook URLを直接ここに書く
+const slackWebhookUrl = 'https://hooks.slack.com/services/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';
 
 app.post('/notify', async (req, res) => {
   const message = req.body.message;
